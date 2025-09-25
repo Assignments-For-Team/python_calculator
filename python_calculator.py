@@ -14,6 +14,6 @@ def divide_numbers(a, b):
 
 # Test the function
 if __name__ == "__main__":
-    print("Sum:", add_numbers(10, 12))
+    print("Sum:", add_numbers(a, b))
     print("Division result:", divide_numbers(10, 2))
     print("Division by zero attempt:", divide_numbers(10, 0))
