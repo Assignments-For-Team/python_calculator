@@ -29,3 +29,18 @@ def test_subtract_same_numbers():
 def test_subtract_floats():
     assert subtract_numbers(5.5, 2.2) == 3.3
     assert subtract_numbers(-1.1, -2.2) == 1.1
+
+from python_calculator import divide_numbers  
+
+def test_divide_normal():
+    assert divide_numbers(10, 2) == 5
+    assert divide_numbers(9, 3) == 3
+    assert divide_numbers(-8, 2) == -4
+
+def test_divide_with_floats():
+    assert divide_numbers(7, 2) == 3.5
+    assert divide_numbers(5.5, 2.2) == pytest.approx(2.5, rel=1e-2)
+
+def test_divide_by_zero():
+    assert divide_numbers(10, 0) == "Error: Division by zero!"
+
