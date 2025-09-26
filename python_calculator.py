@@ -4,7 +4,8 @@ def add_numbers(a, b):
 
 # Function to subtract two numbers  # Added by Manideep
 def subtract_numbers(a, b):
-    return a - b
+    result = a - b
+    return result
     
 # Function to divide two numbers
 def divide_numbers(a, b):
@@ -14,6 +15,9 @@ def divide_numbers(a, b):
 
 # Test the function
 if __name__ == "__main__":
+    
+    a = float(input("Enter the first number: "))
+    b = float(input("Enter the second number: "))
     print("Sum:", add_numbers(a, b))
-    print("Division result:", divide_numbers(10, 2))
-    print("Division by zero attempt:", divide_numbers(10, 0))
+    print("Difference",subtract_numbers(a,b))
+    print("Division result:", divide_numbers(a, b))
